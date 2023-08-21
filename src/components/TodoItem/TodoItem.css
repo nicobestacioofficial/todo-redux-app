@@ -1,0 +1,76 @@
+:root {
+  --inactive-color: rgba(100, 100, 100, 0.4);
+}
+
+.todo-item-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.todo-item-container:hover {
+  box-shadow: 1px 0px 4px 4px rgba(18, 25, 43, 0.2);
+}
+
+.todo-item-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item-cross {
+  color: var(--inactive-color);
+}
+
+.todo-item-header {
+  margin: 0;
+}
+
+.todo-status-container {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-status {
+  margin-right: auto;
+}
+
+.todo-item-done {
+  text-decoration: line-through;
+}
+
+.todo-mark-in-progress,
+.todo-mark-done {
+  color: var(--inactive-color);
+}
+
+.todo-mark-in-progress:hover,
+.todo-mark-done:hover,
+.todo-item-cross:hover {
+  cursor: pointer;
+}
+
+.todo-item-cross:hover {
+  color: #ef2c00;
+}
+
+.todo-mark-in-progress:hover,
+.in-progress {
+  color: rgb(240, 162, 4);
+}
+
+.todo-mark-done:hover,
+.done {
+  color: rgb(98, 245, 6);
+}
+
+.todo-mark-in-progress.clicked {
+  color: orange;
+}
+
+.todo-mark-done.clicked {
+  color: green;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

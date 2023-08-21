@@ -1,0 +1,20 @@
+.App {
+  max-width: 1000px;
+  margin: auto; 
+}
+
+h1 {
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  position: absolute;
+  right: 0;
+}
